@@ -7,7 +7,7 @@ Parametric plotting is currently not provided by existing ROS plotting packages 
 ## Installation:
 
 1. Download and install pyqtgraph from: http://www.pyqtgraph.org/ (current version is v0.9.8).
-2. Grab the ROS package from: https://bitbucket.org/clearpathrobotics/ros-plot-tool
+2. Grab the ROS package from this repository.
 3. Copy the ROS packages to your catkin workspace, and run catkin_make.
 
 ## Running:
