@@ -1,0 +1,8 @@
+#request fields
+nav_msgs/Path msg
+uint32 series
+bool append
+char symbol
+uint32 symbol_size
+---
+

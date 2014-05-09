@@ -1,0 +1,7 @@
+#request fields
+geometry_msgs/Pose msg
+uint32 series
+bool append
+char symbol
+uint32 symbol_size
+---
