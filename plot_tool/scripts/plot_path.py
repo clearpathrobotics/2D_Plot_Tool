@@ -63,9 +63,10 @@ class Graph_Drawer:
 				# This renders each plot item as soon as it is added
 				# This causes a slow down if items are plotted at a high frequency (50Hz)
 				# However, this approach does not miss any plot items
-				# If we don't care about missing plot items, we can move this outside
-				# of the while loop to eliminate any slow downs
+				# If we don't care about missing plot items, we can remove this
 				QtGui.QApplication.instance().processEvents()
+			#Process QT events so graph can still be manipulated when there are no plot requests
+			QtGui.QApplication.instance().processEvents()
 	##	Function plot
 	#	Takes Plot_Info items from the pending queue and creates a plot object that can be added to the graph
 	#	@param x_set the list of x coordinates to be plotted
