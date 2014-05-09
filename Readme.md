@@ -1,16 +1,16 @@
-# Overview and motivation:
+## Overview and motivation:
 
 This ROS package provides the ability to plot parametric 2D plots (i.e. an X, Y plot). It uses pyqtgraph as the back-end plotting library, and currently supports plotting of nav_msgs::Path and geometry_msgs::Pose.
 
 Parametric plotting is currently not provided by existing ROS plotting packages rxplot and rqt_plot, as both of these plot against time. While RViz can handle parametric plots, this is a much lighter and more streamlined tool for when you just want to quickly check a robot path.
 
-# Installation:
+## Installation:
 
 1. Download and install pyqtgraph from: http://www.pyqtgraph.org/ (current version is v0.9.8).
 2. Grab the ROS package from: https://bitbucket.org/clearpathrobotics/ros-plot-tool
 3. Copy the ROS packages to your catkin workspace, and run catkin_make.
 
-# Running:
+## Running:
 
 The plotting tool can be brought up with:
 
@@ -20,7 +20,7 @@ The demo can be brought up with:
 
 - **rosrun plot_demo demo**
 
-# Features and usage:
+## Features and usage:
 
 The plot_tool offers two ROS services:
 
@@ -36,8 +36,7 @@ Both services have the following request fields (the only difference is in the m
 
 | Field | Type | Descriptions |
 --------|------|--------------|
-|msg	| nav_msgs::Path | The message containing the position data to plot. |
-|       | geometry_msgs::Pose |  |
+|msg	| nav\_msgs::Path  geometry\_msgs::Pose | The message containing the position data to plot. |
 |series	| uint32 | Select a series for the data to belong to. Data of the same series will be grouped together, and have its own color. Valid values lie between 0 and 6 (inclusive). See color table below for series/color correspondence. |
 |append	| bool | True: the data will be plotted, and all existing plots in the series will be kept. False: the data will be plotted, and all existing plots in the same series will be cleared. |
 |symbol	| char | The type of plot marker to use. See symbol table below for valid values. |
