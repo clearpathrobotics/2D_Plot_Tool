@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  plot_tool
 )
 
 ## System dependencies are found with CMake's conventions
@@ -67,13 +68,6 @@ find_package(catkin REQUIRED COMPONENTS
 #   Action2.action
 # )
 
-## Generate added messages and services with any dependencies listed here
- generate_messages(
-   DEPENDENCIES
-   geometry_msgs
-   nav_msgs
-   std_msgs
- )
 
 ###################################
 ## catkin specific configuration ##
