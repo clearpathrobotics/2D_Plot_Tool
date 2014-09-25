@@ -249,8 +249,8 @@ int main(int argc, char **argv)
   	ros::NodeHandle n;
 
 	//subscribe to the plotting services
-  	path_srv_h = n.serviceClient<plot_tool::PlotPath>("/plot_tool/draw_path");
-	pose_srv_h = n.serviceClient<plot_tool::PlotPose>("/plot_tool/draw_pose");
+  	path_srv_h = n.serviceClient<plot_tool::PlotPath>("plot_tool/draw_path");
+	pose_srv_h = n.serviceClient<plot_tool::PlotPose>("plot_tool/draw_pose");
 
 	while (!ros::isShuttingDown())
 	{
