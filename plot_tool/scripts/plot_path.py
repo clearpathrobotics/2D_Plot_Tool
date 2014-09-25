@@ -186,8 +186,8 @@ def node_setup():
 	graph_obj = Graph_Drawer()
 	# Start the ROS Node and register the services offered
 	rospy.init_node('plot_path')
-	drawLine_srv = rospy.Service("/plot_tool/draw_path", PlotPath, srv_plot_path)
-	drawPoint_srv = rospy.Service("/plot_tool/draw_pose", PlotPose, srv_plot_pose)
+	drawLine_srv = rospy.Service("plot_tool/draw_path", PlotPath, srv_plot_path)
+	drawPoint_srv = rospy.Service("plot_tool/draw_pose", PlotPose, srv_plot_pose)
 	# Kick off the main run loop in the Graph_Drawer instance
 	graph_obj.run_loop()
 
